@@ -5,8 +5,8 @@ package util;
  */
 public abstract class Algoritmos {
 	private int num;
-	public Algoritmos (int num) {
-		this.num = num;
+	public Algoritmos () {
+	
 	}
 	/**
 	 * Este metodo calcula el numero dentro de la secuencia de fibonacci 
@@ -39,7 +39,6 @@ public abstract class Algoritmos {
 	 * @return un booleano en funcion de si el numero recibido es primo o no
 	 */
 	public static boolean esPrimo(int numero) {
-		boolean esPrimo = true;
 		if (numero < 2) {
 			return false;
 		}
