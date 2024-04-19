@@ -33,8 +33,12 @@ public abstract class Algoritmos {
 		}
 		return factorial;
 	}
-	
-	public static String esPrimo(int numero) {
+	/**
+	 * Este metodo recibe un numero y verifica si es primo o no
+	 * @param el numero del que se quiere saber si es primo o no
+	 * @return un booleano en funcion de si el numero recibido es primo o no
+	 */
+	public static boolean esPrimo(int numero) {
 		boolean esPrimo = true;
 		for (int i = 2; i < numero; i++) {
 			if(numero%i == 0 ) {
@@ -42,9 +46,9 @@ public abstract class Algoritmos {
 			} 
 		}
 		if (esPrimo == false) {
-			return "El numero no es primo";
+			return false;
 		}else {
-			return "El numero es primo";
+			return true;
 		}
 	}
 	
