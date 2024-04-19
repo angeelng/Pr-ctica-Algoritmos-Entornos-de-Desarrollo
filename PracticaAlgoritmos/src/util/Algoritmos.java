@@ -1,5 +1,8 @@
 package util;
-
+/**
+ * Clase Algoritmos. Permite calcular diferentes algoritmos
+ * @author Ángel 
+ */
 public abstract class Algoritmos {
 	private int num;
 	public Algoritmos (int num) {
@@ -11,15 +14,12 @@ public abstract class Algoritmos {
 	 * @param el numero del que se quiere saber su correspondiente en fibonacci
 	 * @return el numero dentro de la secuencia de fibonacci correspondiente al pasado por parametro
 	 */
-	public static int fibonacci (int numero) {
-		
+	public static int fibonacci (int numero) {		
 		if (numero <=1) {
 			return numero;
 		} else {
-			return  fibonacci(numero - 1) + fibonacci(numero - 2); 
-			
-		}
-		 
+			return  fibonacci(numero - 1) + fibonacci(numero - 2); 		
+		}	 
 	}
 	/**
 	 * Este metodo realiza el factorial del numero que se le pase por parametro
@@ -40,16 +40,16 @@ public abstract class Algoritmos {
 	 */
 	public static boolean esPrimo(int numero) {
 		boolean esPrimo = true;
+		if (numero < 2) {
+			return false;
+		}
 		for (int i = 2; i < numero; i++) {
 			if(numero%i == 0 ) {
 				esPrimo = false;
+				return false;
 			} 
 		}
-		if (esPrimo == false) {
-			return false;
-		}else {
-			return true;
-		}
+		return true;
 	}
 	
 }
