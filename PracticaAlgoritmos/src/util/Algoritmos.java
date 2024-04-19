@@ -6,16 +6,26 @@ public abstract class Algoritmos {
 		this.num = num;
 	}
 	/**
-	 * 
-	 * @param numero
-	 * @return
+	 * Este metodo calcula el numero dentro de la secuencia de fibonacci 
+	 * correspondiente al numero que se le pase por parametro
+	 * @param el numero del que se quiere saber su correspondiente en fibonacci
+	 * @return el numero dentro de la secuencia de fibonacci correspondiente al pasado por parametro
 	 */
 	public static int fibonacci (int numero) {
-		int fibonacci_1 = 0;
-		int fibonacci_2 = 1;
-		return 0;
+		
+		if (numero <=1) {
+			return numero;
+		} else {
+			return  fibonacci(numero - 1) + fibonacci(numero - 2); 
+			
+		}
+		 
 	}
-	
+	/**
+	 * Este metodo realiza el factorial del numero que se le pase por parametro
+	 * @param el numero del que se quiere realizar el factorial
+	 * @return el factorial del numero pasado por pantalla
+	 */
 	public static int factorial (int numero) {
 		int factorial = 0;
 		for (int i = 0; i < numero; i++) {
