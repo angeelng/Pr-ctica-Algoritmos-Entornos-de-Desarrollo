@@ -45,7 +45,6 @@ public abstract class Algoritmos {
 		}
 		for (int i = 2; i < numero; i++) {
 			if(numero%i == 0 ) {
-				esPrimo = false;
 				return false;
 			} 
 		}
